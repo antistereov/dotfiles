@@ -2,9 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Enable brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 alias dc="docker compose"
 alias dl="docker logs"
 alias de="docker exec"
