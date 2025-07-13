@@ -9,3 +9,5 @@ alias kn "kubectl config set-context --current --namespace"
 
 # Enable zoxide 
 zoxide init fish | source
+
+set HOMEBREW_NO_ENV_HINTS 1
