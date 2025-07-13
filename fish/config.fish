@@ -1,3 +1,8 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+# Enable brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 alias dc="docker compose"
@@ -7,7 +12,6 @@ alias dps="docker ps --format 'table {{.Names}}\t{{printf \"%-20s\" .Status}}'"
 alias k kubectl
 alias kn "kubectl config set-context --current --namespace"
 
-# Enable zoxide 
+# Enable zoxide
 zoxide init fish | source
 
-set HOMEBREW_NO_ENV_HINTS 1
