@@ -9,7 +9,7 @@ This repository contains my dotfiles for various tools. Most of it are my very o
 Run the following command to clone this repository.
 
 ```bash
-git clone https://github.com/antistereov/dotfiles
+git clone https://github.com/antistereov/dotfiles.git
 ```
 
 ### 1. Install required tools
