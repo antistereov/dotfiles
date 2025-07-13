@@ -21,7 +21,7 @@ If you want to use any of the tools listed in this repository, you should check 
 Go to the root of this repository and run:
 
 ```bash
-stow -d . -t $HOME/.config
+    stow -d . -t $HOME/.config --adopt
 ```
 
 > **Note:** Make sure to run this command every time you update this repository.
