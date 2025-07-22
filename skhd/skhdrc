@@ -55,5 +55,5 @@ alt + shift - 9 : yabai -m window --space 9
 alt + shift - 0 : yabai -m window --space 10
 
 # Toggle pseudo scratchpad window: float, sticky, and center it on grid
-alt - s : yabai -m window --toggle sticky --toggle float --grid 4:4:1:1:2:2
+alt - p : yabai -m window --toggle sticky --toggle float --grid 4:4:1:1:2:2
 
