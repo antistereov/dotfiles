@@ -1,3 +1,6 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
 # bsp or float (default: float)
 yabai -m config layout bsp
 
@@ -39,16 +42,6 @@ yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
 yabai -m config mouse_drop_action            swap
-
-# yabai -m config --space 5 right_padding 30
-
-yabai -m config --space $(yabai -m query --displays | jq 'map(select(.index==2)) | .[0].spaces[0]') left_padding 0
-yabai -m config --space $(yabai -m query --displays | jq 'map(select(.index==2)) | .[0].spaces[0]') right_padding 0
-yabai -m config --space $(yabai -m query --displays | jq 'map(select(.index==2)) | .[0].spaces[1]') left_padding 0
-yabai -m config --space $(yabai -m query --displays | jq 'map(select(.index==2)) | .[0].spaces[1]') right_padding 0
-
-# killall limelight &> /dev/null
-# limelight &> /dev/null &
 
 yabai -m signal --add event=application_activated action="zsh ~/.config/yabai/application-activated.zsh"
 yabai -m signal --add event=window_created action="zsh ~/.config/yabai/window-created.zsh"
