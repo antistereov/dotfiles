@@ -18,10 +18,17 @@ If you want to use any of the tools listed in this repository, you should check 
 
 ### 2. Use `stow` to create syslinks
 
-Go to the root of this repository and run:
+Go to the root of this repository and run this command for your chosen directory:
 
 ```bash
-    stow -d . -t $HOME/.config --adopt
+    stow -d <directory> -t $HOME/.config/<directory>
+```
+
+For example, if you want to stow your nvim configuration:
+
+
+```bash
+    stow -d nvim -t $HOME/.config/nvim
 ```
 
 > **Note:** Make sure to run this command every time you update this repository.
