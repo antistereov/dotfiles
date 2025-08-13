@@ -22,3 +22,15 @@ zoxide init fish | source
 alias rm "trash -v"
 alias ll "eza -l"
 alias ls "eza"
+
+for f in ~/.config/fish/functions/user/*.fish
+    source $f
+end
+
+for f in ~/.config/fish/completions/user/*.fish
+    source $f
+end
+
+# Enable starship
+starship init fish | source
+
