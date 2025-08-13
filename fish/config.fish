@@ -2,8 +2,12 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# Configure GPG
 set GPG_TTY $(tty)
+# Disable fish greeting
 set fish_greeting ""
+# Disable brew hints
+set HOMEBREW_NO_ENV_HINTS 1
 
 # Docker
 alias dc="docker compose"
