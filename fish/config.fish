@@ -38,3 +38,4 @@ end
 # Enable starship
 starship init fish | source
 
+fastfetch
