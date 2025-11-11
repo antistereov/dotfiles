@@ -24,8 +24,8 @@ zoxide init fish | source
 
 # Improve utilities
 alias rm "trash -v"
-alias ll "eza -l"
-alias ls "eza"
+alias ll "eza -l --icons --git --group-directories-first"
+alias ls eza
 
 for f in ~/.config/fish/functions/user/*.fish
     source $f
