@@ -74,7 +74,7 @@
     {
       "key": "│ {#32} wifi    {#keys}│",
       "type": "wifi",
-      "format": "{ssid} {quality}%"
+      "format": "{ssid}"
     },
     {
       "key": "│ {#34}󰁹 battery {#keys}│",
