@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Proton Mail
+Comment=Proton official desktop application for Proton Mail and Proton Calendar
+GenericName=Proton Mail
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=start-proton-mail --file-forwarding me.proton.Mail @@u %U @@
+Icon=ch.protonmail.protonmail-bridge.svg
+Type=Application
+StartupNotify=true
+Categories=Network;Email;
+MimeType=x-scheme-handler/mailto;
+X-Desktop-File-Install-Version=0.28
+X-Flatpak=me.proton.Mail
