@@ -2,6 +2,10 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+if test -f /home/linuxbrew/.linuxbrew/bin/brew
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
+
 # Configure GPG
 set GPG_TTY $(tty)
 # Disable fish greeting
@@ -33,10 +37,6 @@ end
 
 for f in ~/.config/fish/completions/user/*.fish
     source $f
-end
-
-if test -f /home/linuxbrew/.linuxbrew/bin/brew
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
 
 # Enable starship
