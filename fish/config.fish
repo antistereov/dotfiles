@@ -35,6 +35,10 @@ for f in ~/.config/fish/completions/user/*.fish
     source $f
 end
 
+if test -f /home/linuxbrew/.linuxbrew/bin/brew
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
+
 # Enable starship
 starship init fish | source
 
