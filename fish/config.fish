@@ -45,3 +45,8 @@ starship init fish | source
 
 # Configure keybindings for fzf
 fzf_configure_bindings --variables=\e\cv
+
+if test (uname) = Darwin
+    alias wg-up="/opt/homebrew/bin/bash $(which wg-quick) up"
+    alias wg-down="/opt/homebrew/bin/bash $(which wg-quick) down"
+end
