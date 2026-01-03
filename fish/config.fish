@@ -1,10 +1,10 @@
+if test -f /home/linuxbrew/.linuxbrew/bin/brew
+    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     fastfetch
-end
-
-if test -f /home/linuxbrew/.linuxbrew/bin/brew
-    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
 
 # Configure GPG
