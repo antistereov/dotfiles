@@ -8,11 +8,13 @@ if status is-interactive
 end
 
 # Configure GPG
-set GPG_TTY $(tty)
+set -x GPG_TTY $(tty)
 # Disable fish greeting
-set fish_greeting ""
+set -x fish_greeting ""
 # Disable brew hints
-set HOMEBREW_NO_ENV_HINTS 1
+set -x HOMEBREW_NO_ENV_HINTS 1
+# Set Starship Configuration
+set -x STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 
 # Docker
 alias dc="docker compose"
