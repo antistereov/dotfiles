@@ -1,0 +1,37 @@
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$kubernetes\
+$package\
+$python\
+$rust\
+$golang\
+$terraform\
+$docker_context\
+$memory_usage\
+$env_var\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+$shell\
+$character
+"""
+
+[kubernetes]
+format = 'on [󱃾  $context( \($namespace\))](blue) '
+disabled = false
+
+[aws]
+disabled = true
